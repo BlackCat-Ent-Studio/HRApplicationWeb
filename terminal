@@ -1,0 +1,15 @@
+# Create main project directories
+mkdir -p project-root/{frontend,backend,database}
+
+# Create frontend directory structure
+cd project-root/frontend
+mkdir -p pages/{personal,manager} components/{layouts,forms,ui} services styles public
+
+# Create backend directory structure
+cd ../backend
+mkdir -p src/{modules/{auth,dataStore,formSubmission,dataRetrieval,dataManagement,export}/{controllers,services},config,middlewares,utils,routes}
+mkdir -p src/modules/dataStore/repositories
+
+# Create database directory structure
+cd ../database
+mkdir -p migrations seeds 
